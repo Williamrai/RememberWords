@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="thirty_two">32dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="sixty_four">64dp</dimen>
+
+    <dimen name="dialog_width">400dp</dimen>
+    <dimen name="dialog_height">190dp</dimen>
+</resources>

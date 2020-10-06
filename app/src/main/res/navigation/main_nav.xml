@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainpageFragment">
+
+    <fragment
+        android:id="@+id/mainpageFragment"
+        android:name="com.example.alwaysremeber.functions.mainpage.MainPageFragment"
+        android:label="fragment_mainpage"
+        tools:layout="@layout/fragment_mainpage" >
+        <action
+            android:id="@+id/action_mainpageFragment_to_categoryPageFragment"
+            app:destination="@id/categoryPageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryPageFragment"
+        android:name="com.example.alwaysremeber.functions.subcategorypage.SubCategoryPageFragment"
+        android:label="fragment_category_page"
+        tools:layout="@layout/fragment_category_page" >
+        <argument
+            android:name="word"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_categoryPageFragment_to_searchPromptFragment"
+            app:destination="@id/searchPromptFragment" />
+        <argument
+            android:name="id_main_category"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_categoryPageFragment_to_browserFragment"
+            app:destination="@id/browserFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wordPageFragment"
+        android:name="com.example.alwaysremeber.functions.wordpage.WordPageFragment"
+        android:label="fragment_word_page"
+        tools:layout="@layout/fragment_word_page" />
+
+    <dialog
+        android:id="@+id/searchPromptFragment"
+        android:name="com.example.alwaysremeber.functions.search.SearchPromptFragment"
+        android:label="SearchPromptFragment"
+        tools:layout="@layout/fragment_search_prompt">
+        <action
+            android:id="@+id/action_searchPromptFragment_to_categoryPageFragment"
+            app:destination="@id/categoryPageFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/browserFragment"
+        android:name="com.example.alwaysremeber.functions.browser.BrowserFragment"
+        android:label="fragment_browser"
+        tools:layout="@layout/fragment_browser" >
+        <argument
+            android:name="words"
+            app:argType="string" />
+    </fragment>
+</navigation>

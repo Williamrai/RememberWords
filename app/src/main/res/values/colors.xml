@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5D517C</color>
+    <color name="colorPrimaryDark">#4A4063</color>
+    <color name="colorAccent">#F6BED6</color>
+
+
+    <color name="Cupid">#F6BED6</color>
+    <color name="Gainsboro">#E5E5E5</color>
+
+</resources>

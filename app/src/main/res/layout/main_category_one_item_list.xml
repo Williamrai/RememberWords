@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="mainCategory"
+            type="com.example.alwaysremeber.database.tables.MainCategory" />
+        <variable
+            name="clickListener"
+            type="com.example.alwaysremeber.functions.mainpage.MyListener" />
+        
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/sixteen"
+        android:paddingRight="@dimen/sixteen">
+
+        <Button
+            android:id="@+id/category_btn"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:background="@drawable/img_books"
+            android:elevation="4dp"
+            android:onClick="@{() -> clickListener.onClick(mainCategory)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/category_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/books"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/four"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category_btn"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

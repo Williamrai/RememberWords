@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AlwaysRemeber</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">Add a new Book</string>
+    <string name="greeting">Good Morning</string>
+    <string name="books">Books</string>
+    <string name="language">Language</string>
+    <string name="just_words">Just Words</string>
+    <string name="okay">Okay</string>
+    <string name="hint">Enter name of the book</string>
+    <string name="cancel">Cancel</string>
+</resources>
